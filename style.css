@@ -1,0 +1,15 @@
+
+body{
+    padding: 25px;
+}
+
+.img-logo{
+    width: 5%;
+}
+.main-principal{
+    border: black 2px;
+    background-color: aqua;
+}
+.main-secundario{
+    background-color: burlywood;
+}
