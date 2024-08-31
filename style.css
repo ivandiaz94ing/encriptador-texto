@@ -2,6 +2,10 @@
 body{
     padding: 25px;
 }
+.main{
+    display: flex;
+    flex-direction: row;
+}
 
 .img-logo{
     width: 5%;
@@ -11,5 +15,9 @@ body{
     background-color: aqua;
 }
 .main-secundario{
+    height: 40%;
+    border-radius: 15%;
     background-color: burlywood;
+}
+.main-secundario-imagen{
 }
