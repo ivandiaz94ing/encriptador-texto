@@ -1,23 +1,47 @@
 
 body{
     padding: 25px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
 }
+
+
 .main{
     display: flex;
     flex-direction: row;
+    height: 90vh;
 }
 
 .img-logo{
     width: 5%;
 }
 .main-principal{
-    border: black 2px;
-    background-color: aqua;
+    width: 100%;
+ 
 }
+.main-principal-botones-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: darkblue;
+    color: white;
+    border: 1px solid black;
+} 
 .main-secundario{
-    height: 40%;
-    border-radius: 15%;
-    background-color: burlywood;
+    width: 35%;
+    border-radius: 32px;
+    background-color: white;
 }
 .main-secundario-imagen{
+    width: 15%;
+}
+
+input{
+    border: none;
+    background-color: #E5E5E5;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    background-color: #E5E5E5;
 }
