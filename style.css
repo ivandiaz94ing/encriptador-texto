@@ -19,11 +19,12 @@ body{
 }
 
 .img-logo{
-    width: 3%;
+    width: 8%;
     margin: 0 0 2rem 0;
 }
 .main-principal{
     width: 100%;
+    margin: 3rem;
  
 }
 .main-principal-botones-link{
