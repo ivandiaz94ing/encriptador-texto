@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --color-primario: #0a396f;
     --fuente--roboto: 'Roboto', sans-serif;
+    --fuente-inter: "Inter", sans-serif;
 }
 
 body{
@@ -10,7 +11,10 @@ body{
     box-sizing: border-box;
     background-color: #E5E5E5;
 }
-
+.img-logo{
+    width: 4%;
+    margin: 0 0 2rem 0;
+}
 
 .main{
     display: flex;
@@ -19,26 +23,76 @@ body{
     gap: 10px;
 }
 
-.img-logo{
-    width: 4%;
-    margin: 0 0 2rem 0;
+.main-contenido-izq{
+    background-color: #0a3;
+    width: 65%;
+    margin-left: 1rem;
+    padding: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #E5E5E5; */
 }
+
+
 .main-principal{
     width: 65%;
     margin: 1rem;
     background-color: #E5E5E5;
  
 }
-.main-principal-botones-link{
+
+textarea{
+    width: 90%;
+    height: 300px;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    background-color: #E5E5E5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(108, 108, 196);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: justify;
     
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+    background-color: #E5E5E5;   
+}
+
+textarea::placeholder{
+    color: rgb(108, 108, 196);
+}
+
+.main-contenido-izq-inferior-botones{
+    margin-top: 1rem;
+    display: flex;
+    gap: 24px;
+}
+.main-contenido-izq-botones-link{
     text-decoration: none;
-    font-size: 1.2rem;
+    width: 250px;
+    height: 2.25rem;
+    font-size: 16px;
     background-color: var(--color-primario);
     color: white;
-    border-radius: 15px;
-    padding: 10px 15px;
+    border-radius: 2.5rem;
+    padding: 1rem 7rem;
+    font-family: var(--fuente-inter);
+    text-align: center;
 
 } 
+
+.main-contenido-der{
+    background-color: darkgoldenrod;
+}
+
 .main-secundario{
     display: flex;
     flex-direction: column;
@@ -82,9 +136,7 @@ body{
     font-size: 1.2rem;
     width: 50%;
     font-family: var(--fuente--roboto);
-    /* background-color: var(--color-primario); */
-     border: solid 2px var(--color-primario); 
-    
+    border: solid 2px var(--color-primario); 
     color: #000000;
     cursor: pointer;
 }
@@ -94,30 +146,3 @@ body{
 
 }
 
-textarea{
-    width: 90%;
-    height: 300px;
-    border: none;
-    overflow: hidden;
-    resize: none;
-    background-color: #E5E5E5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: rgb(108, 108, 196);
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: justify;
-    border: solid 2px black;
-    margin-left: 10rem;
-}
-
-textarea:focus{
-    border: none;
-    outline: none;
-    background-color: #E5E5E5;   
-}
-
-textarea::placeholder{
-    color: rgb(108, 108, 196);
-}
