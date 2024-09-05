@@ -7,32 +7,31 @@
 }
 
 body{
-    padding: 25px;
+    padding: 1rem;
     box-sizing: border-box;
     background-color: #E5E5E5;
 }
 .img-logo{
-    width: 4%;
+    width: 2%;
     margin: 0 0 2rem 0;
 }
 
 .main{
     display: flex;
     flex-direction: row;
-    height: 90vh;
+    height: 82vh;
     gap: 10px;
 }
 
 .main-contenido-izq{
     background-color: #0a3;
     width: 65%;
-    margin-left: 1rem;
     padding: 2rem;
     margin-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: #E5E5E5; */
+    background-color: #E5E5E5;
 }
 
 
@@ -54,7 +53,7 @@ textarea{
     font-weight: 400;
     font-size: 2rem;
     color: rgb(108, 108, 196);
-    padding: 10px;
+    padding: .5rem;
     box-sizing: border-box;
     text-align: justify;
     
@@ -77,20 +76,35 @@ textarea::placeholder{
 }
 .main-contenido-izq-botones-link{
     text-decoration: none;
-    width: 250px;
-    height: 2.25rem;
-    font-size: 16px;
+    width: 25rem;
+    height: 5rem;
+    font-size: 20px;
     background-color: var(--color-primario);
     color: white;
     border-radius: 2.5rem;
-    padding: 1rem 7rem;
+    padding: 0;
     font-family: var(--fuente-inter);
-    text-align: center;
+    /* text-align: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 } 
 
 .main-contenido-der{
-    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    width: 25%;
+    border-radius: 32px;
+    background-color: white;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .5rem .5rem .25rem #888888;
 }
 
 .main-secundario{
@@ -112,6 +126,10 @@ textarea::placeholder{
     /* border: solid 2px black; */
 }
 
+.main-contenido-der-imagen{
+    width: 60%;
+}
+
 .main-secundario-subtitulo{
     font-family: var(--fuente--roboto);
     text-align: center;
@@ -120,16 +138,46 @@ textarea::placeholder{
     padding-right: 1rem;
     /* border: solid 2px black; */
 }
+
+.main-contenido-der-subtitulo{
+    font-family: var(--fuente--roboto);
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: solid 2px black; */
+}
+
+
 .main-secundario-parrafo{
     font-family: var(--fuente--roboto);
     font-size: 1.1rem;
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+}
 
+.main-contenido-der-parrafo{
+    font-family: var(--fuente--roboto);
+    font-size: 1.1rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .main-secundario-button{
+    padding: 1rem;
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    width: 50%;
+    font-family: var(--fuente--roboto);
+    border: solid 2px var(--color-primario); 
+    color: #000000;
+    cursor: pointer;
+}
+
+.main-contenido-der-button{
     padding: 1rem;
     border: none;
     border-radius: 1.2rem;
