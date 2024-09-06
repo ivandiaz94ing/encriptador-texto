@@ -95,6 +95,7 @@ textarea::placeholder{
     display: flex;
     gap: 2px;
     align-items: center;
+    font-family: var(--fuente-inter);
 }
 
 .main-contenido-izq-inferior-icon{
@@ -191,3 +192,6 @@ textarea::placeholder{
 
 }
 
+svg{
+    fill: var(--color-primario);
+}
