@@ -91,6 +91,15 @@ textarea::placeholder{
 
 } 
 
+.main-contenido-izq-texto{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.main-contenido-izq-inferior-icon{
+    color: #0a396f;
+}
 .main-contenido-der{
     display: flex;
     flex-direction: column;
