@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Encriptador de texto</title>
 </head>
 
@@ -45,14 +45,23 @@
             </div>
         </section>
         
-        <section class="main-contenido-der">
+        <section id="contenedor-padre" class="main-contenido-der">
+
+            <div id="contenido-vacio">
 
             <img class="main-contenido-der-imagen" src="assets/images.jpeg" alt="">    
             <div class="main-contenido-der-texto">
                 <h3 class="main-contenido-der-subtitulo">Ningun mensaje fué encontrado</h3>  
                 <p class="main-contenido-der-parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <button class="main-contenido-der-button">Copiar</button>
+
+        </div>
+
+        <p class="texto-resultado" id="texto-a-copiar">
+
+        </p>
+
+            <button onclick="copiarTexto()" class="main-contenido-der-button">Copiar</button>
             </section>
     </main>
 
