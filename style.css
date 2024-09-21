@@ -179,7 +179,7 @@ svg{
     /* font-size: 2rem; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .main{
         flex-direction: column;    
     }
