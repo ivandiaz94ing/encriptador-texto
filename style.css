@@ -10,9 +10,10 @@ body{
     padding: 1rem;
     box-sizing: border-box;
     background-color: #E5E5E5;
+  
 }
 .img-logo{
-    width: 2%;
+    width: 1.6rem;
     margin: 0 0 2rem 0;
 }
 
@@ -21,6 +22,7 @@ body{
     flex-direction: row;
     height: 100vh;
     gap: 1rem;
+   
 }
 
 .main-contenido-izq{
@@ -123,6 +125,7 @@ textarea::placeholder{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 .main-contenido-der-imagen{
@@ -169,4 +172,105 @@ textarea::placeholder{
 
 svg{
     fill: var(--color-primario);
+}
+
+.texto-resultado{
+    font-family: var(--fuente--roboto);
+    /* font-size: 2rem; */
+}
+
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;    
+    }
+
+    .main-contenido-izq{
+        width: 95%;
+        padding: 1rem;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #E5E5E5;
+    }
+
+    .main-contenido-der{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 32px;
+        background-color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: 0 .5rem .5rem .5rem #888888;
+        text-align: justify;
+    }
+
+    .main-contenido-der-button{
+        padding: 1rem;
+        border: none;
+        border-radius: 2.5rem;
+        font-size: 1.2rem;
+        width: 50%;
+        height: 5rem;
+        font-family: var(--fuente--roboto);
+        border: solid 2px var(--color-primario); 
+        color: #000000;
+        cursor: pointer;
+        margin-top: auto;
+    }
+
+    
+}
+
+@media (max-width: 375px) {
+    .main-contenido-izq-inferior-botones{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .main-contenido-izq-botones-link{
+        text-decoration: none;
+        width: auto;
+        height: 5rem;
+        font-size: 20px;
+        background-color: var(--color-primario);
+        color: white;
+        border-radius: 2.5rem;
+        padding: 0;
+        font-family: var(--fuente-inter);
+        /* text-align: center; */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    } 
+
+    /* .main-contenido-der{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 32px;
+        background-color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: 0 .5rem .5rem .25rem #888888;
+        text-align: justify;
+    } */
+
+    
+
 }

@@ -58,7 +58,7 @@ function encriptar(texto){
         navigator.clipboard.writeText(texto).then(function(){
             Swal.fire({
                 title: 'Notificación!',
-                text: 'Texto copiado en el portapapeles',
+                text: 'Texto copiado exitosamente',
                 icon: 'success',
                 timer: 3000,  // Se cierra automáticamente después de 3 segundos
                 showConfirmButton: false
